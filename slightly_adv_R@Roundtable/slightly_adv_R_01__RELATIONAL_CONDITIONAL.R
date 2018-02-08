@@ -97,12 +97,17 @@ sharks <- matrix(c(tiger, hammerheads, lemon, bull, blacktip, cookiecutter),
                  nrow = 6, byrow = TRUE)
 colnames(sharks) <- paste0('day_', seq(from = 1, to = dim(sharks)[2]))
 rownames(sharks) <- c("tiger", "hammerheads", "lemon", "bull", "blacktip", "cookiecutter")
+sharks
 
-# Save counts for all species on day 5 in a vector.
+# Save counts for all species on day 5 in a vector. Print the vector to the console.
 
-# Create a new vector that is TRUE for counts below 2 and above 4 (both inclusive).
+# Use that day 5 vector to create a new vector that is TRUE for counts below 2
+# or above 4 (both inclusive). Again, print that vector to the console.
 
-# Using that vecor, count how often these particularly high or low counts occured on day 5.
+# Using that vecor, count how often these particularly high or low counts
+# occured on day 5. That means: use the sum() function to count the numbers
+# of TRUE in the vector created above. The sum() function does that pretty
+# much automatically.
 
 # And now solve it all in one single line of code.
 
@@ -201,7 +206,7 @@ aquarium_temperature <- 37
 
 # Add a printout of the current temperature to the while loop. Use the paste 
 # function for that:
-paste0('Current temperature is ', aquarium_temperature, '°C.')
+paste0('Current temperature is ', aquarium_temperature, ' degrees.')
 
 # Unfortunately, your lab's cooling system can only handle aquarium temperatures
 # up to 40 degrees. If the tank arrives or exceeds that temperature, the cooling
@@ -211,7 +216,7 @@ paste0('Current temperature is ', aquarium_temperature, '°C.')
 # down the while loop if aquarium_temperature reaches or exceeds 40 degrees.
 
 # Enter a warning printout (text up to you!) that is printed when temperature
-# reaches or exceeds 40°C. That text should be printed before the loop breaks.
+# reaches or exceeds 40 degrees. That text should be printed before the loop breaks.
 
 
 ## 02: for loops ####
